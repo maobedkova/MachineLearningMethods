@@ -1,0 +1,9 @@
+Description of dataset: Preprocessed labeled Twitter datasets, one automatically annotated and two manually annotated as used in Tromp et al, 2013, submission to CINLP special issue.
+Contains two languages: English and Dutch.
+Source: http://www.win.tue.nl/~mpechen/projects/smm/CINLP_datasets.zip
+Processing:
+- Filtering (we filtered out Dutch sentences)
+- Preprocessing (tokenization, lemmatization)
+- Feature extraction (tf-idf vectorization + self-made features such as smileys containing, number of exclamation and question marks, etc.)
+- Visualization
+
