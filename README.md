@@ -16,3 +16,7 @@ Implementation of **Perceptron**, **Naive Bayes** and **KNN** algorithms.
 ### my-regression
 
 Implementation of **Simple Linear Regression** and **Linear Regression with Gradient Descent**.
+
+### scikit-regression
+
+Application of scikit-learn implementation for **Linear Regression**, **Decision Tree Regressor**, **Support Vector Regressor**, **Ridge Regression**, **Bayesian Ridge Regression** and **KNN Regressor**.
