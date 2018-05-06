@@ -15,7 +15,7 @@ def read_data(path):
 
 
 def cross_validation(data, labels):
-    kernels = ["rbf", "linear", "poly"]
+    kernels = ["rbf", "linear"]#, "poly"] unstable
     for k in kernels:
         clf = SVC(kernel=k, random_state=42)
         print(k, np.mean(cross_val_score(clf, data, labels, cv=10)))
@@ -26,8 +26,8 @@ def cross_validation(data, labels):
 def heatmap(data, labels):
     clf = SVC(kernel="rbf", random_state=42)
 
-    C_params = [1, 10, 50, 100, 1000]
-    G_params = [0.01, 0.005, 0.001, 0.0005, 0.0001]
+    C_params = [500, 1000, 2000, 5000]
+    G_params = [0.75, 0.5, 0.1, 0.05]
     params = {"C": C_params, "gamma": G_params}
     gs = GridSearchCV(clf, params)
     gs.fit(data, labels)
@@ -37,11 +37,11 @@ def heatmap(data, labels):
     plt.figure(figsize=(8, 6))
     plt.subplots_adjust(left=.2, right=0.95, bottom=0.15, top=0.95)
     plt.imshow(scores, interpolation='nearest', cmap=plt.cm.hot)
-    plt.xlabel('C')
-    plt.ylabel('gama')
+    plt.xlabel('gama')
+    plt.ylabel('C')
     plt.colorbar()
-    plt.xticks(np.arange(len(C_params)), C_params)
-    plt.yticks(np.arange(len(G_params)), G_params)
+    plt.xticks(np.arange(len(G_params)), G_params)
+    plt.yticks(np.arange(len(C_params)), C_params)
     plt.title('Grid Search')
     plt.show()
 
@@ -52,8 +52,10 @@ def grid_search(data, labels, test_data, test_labels):
 
     clf = SVC(kernel="rbf", random_state=42)
 
+    C_params = [500, 1000, 2000, 5000]
+    G_params = [0.75, 0.5, 0.1, 0.05]
     params = [
-        {'C': [1, 10, 50, 100, 1000], 'gamma': [0.005, 0.001, 0.0005, 0.0001]},
+        {'C': C_params, 'gamma': G_params},
     ]
     gs = GridSearchCV(clf, params)
     gs.fit(train_data, train_labels)
@@ -71,7 +73,7 @@ if __name__ == "__main__":
     test_data, test_labels = read_data(path_test)
     train_data, train_labels = read_data(path_train)
 
-    # cross_validation(train_data, train_labels)
+    cross_validation(train_data, train_labels)
 
     heatmap(train_data, train_labels)
 
