@@ -20,3 +20,16 @@ Implementation of **Simple Linear Regression** and **Linear Regression with Grad
 ### scikit-regression
 
 Application of scikit-learn implementation for **Linear Regression**, **Decision Tree Regressor**, **Support Vector Regressor**, **Ridge Regression**, **Bayesian Ridge Regression** and **KNN Regressor**.
+
+### classification-gridsearch
+
+Application of scikit-learn implementation for **SVM**, **Grid Search**, **Cross Validation**.
+
+### my-clustering
+
+Implementation of **K-Means** algorithm.
+
+### scikit-classification
+
+Application of scikit-learn implementation for **SVM**, **Decision Tree**, **KNN** and **Naive Bayes**.
+

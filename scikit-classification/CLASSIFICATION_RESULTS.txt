@@ -1,0 +1,81 @@
+# Your results:
+# - please add as many lines as you can:
+#   - for each dataset, there have to be at least three results
+#     - from three different Scikit classifiers
+#     - or from your classifier as implemented in hwk my-classifiers
+# - use a single tab to delimit the columns
+# - feel free to pad the cells with spaces so that tabs align
+# - use method labels such as: myNB, myPerceptron, scikitSVM, ...
+# - put any comments (e.g. important scikit parameters, subsampling of the
+#   training data etc.) in the last cell
+#   Include also one of these keywords in the comment on each line:
+#     ORIGFEATS ... used just the original features, unchanged
+#     ONEHOT    ... converted categorical features to one-hot representation
+
+# Dataset                 	Method    	Accu	Author	Comment (one very long line, should include also the keywords)
+car-evaluation            	MFbaseline	    	bojar 	ORIGFEATS
+cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
+credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
+motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
+mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
+music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
+poker                     	MFbaseline	    	bojar 	ORIGFEATS
+poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
+spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
+wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
+pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
+car-evaluation            	scikitDecisionTree	0.9286	mobedkova	ORIGFEATS
+car-evaluation            	scikitKNN         	0.7085	mobedkova	ORIGFEATS
+car-evaluation            	scikitmSVM        	0.7317	mobedkova	ORIGFEATS
+car-evaluation            	scikitMultiNB     	0.6409	mobedkova	ORIGFEATS
+cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
+cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
+cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
+cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
+connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
+credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
+credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
+credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
+credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
+motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
+motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
+motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
+motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
+mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
+mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
+mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
+mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
+music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
+music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
+music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
+music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
+poker                     	MFbaseline	    	bojar 	ORIGFEATS
+poker                     	MFbaseline	    	bojar 	ORIGFEATS
+poker                     	MFbaseline	    	bojar 	ORIGFEATS
+poker                     	MFbaseline	    	bojar 	ORIGFEATS
+poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
+poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
+poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
+poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
+spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
+spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
+spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
+spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
+wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
+wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
+wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
+wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
+pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
+pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
+pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
+pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
+
