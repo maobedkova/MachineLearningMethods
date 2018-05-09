@@ -1,0 +1,135 @@
+/data/spectf-heart
+
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)
+Best params: {'C': 25, 'gamma': 1.0}
+Accuracy train set: 0.5178571428571429
+Accuracy dev set: 0.4583333333333333
+Accuracy test set: 0.08021390374331551
+--------------------
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+Best params: {'alpha': 0.0, 'fit_prior': True}
+Accuracy train set: 0.6607142857142857
+Accuracy dev set: 0.625
+Accuracy test set: 0.6203208556149733
+--------------------
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=42,
+            splitter='best')
+Best params: {'max_depth': 3, 'min_samples_split': 10}
+Accuracy train set: 0.7321428571428571
+Accuracy dev set: 0.75
+Accuracy test set: 0.679144385026738
+--------------------
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+Best params: {'n_neighbors': 5}
+Accuracy train set: 0.75
+Accuracy dev set: 0.6666666666666666
+Accuracy test set: 0.5454545454545454
+--------------------
+==============================
+./data/pamap-easy
+
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)
+^Z
+[5]+  Stopped                 python3 classification.py
+u1-4:~/MachineLearningMethods/scikit-classification$ python3 classification.py
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)
+Best params: {'gamma': 1.0, 'C': 225}
+Accuracy train set: 0.9801841051226197
+Accuracy dev set: 0.9783606557377049
+Accuracy test set: 0.9774236387782205
+--------------------
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+Best params: {'fit_prior': False, 'alpha': 0.5}
+Accuracy train set: 0.4458576347410583
+Accuracy dev set: 0.44868852459016395
+Accuracy test set: 0.4417884019477645
+--------------------
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=42,
+            splitter='best')
+Best params: {'min_samples_split': 10, 'max_depth': 13}
+Accuracy train set: 0.9796922212072237
+Accuracy dev set: 0.978688524590164
+Accuracy test set: 0.9783089862771137
+--------------------
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+Best params: {'n_neighbors': 3}
+Accuracy train set: 0.9725247698685967
+Accuracy dev set: 0.9785245901639344
+Accuracy test set: 0.9774236387782205
+--------------------
+==============================
+
+data/mushrooms
+
+ SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)
+Best params: {'C': 25, 'gamma': 0.5}
+Accuracy train set: 1.0
+Accuracy dev set: 1.0
+Accuracy test set: 1.0
+--------------------
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+/afs/ms/u/o/obedkovm/.local/lib64/python3.4/site-packages/sklearn/naive_bayes.py:472: UserWarning: alpha too small will result in numeric errors, setting alpha = 1.0e-10
+  'setting alpha = %.1e' % _ALPHA_MIN)
+/afs/ms/u/o/obedkovm/.local/lib64/python3.4/site-packages/sklearn/naive_bayes.py:472: UserWarning: alpha too small will result in numeric errors, setting alpha = 1.0e-10
+  'setting alpha = %.1e' % _ALPHA_MIN)
+/afs/ms/u/o/obedkovm/.local/lib64/python3.4/site-packages/sklearn/naive_bayes.py:472: UserWarning: alpha too small will result in numeric errors, setting alpha = 1.0e-10
+  'setting alpha = %.1e' % _ALPHA_MIN)
+/afs/ms/u/o/obedkovm/.local/lib64/python3.4/site-packages/sklearn/naive_bayes.py:472: UserWarning: alpha too small will result in numeric errors, setting alpha = 1.0e-10
+  'setting alpha = %.1e' % _ALPHA_MIN)
+/afs/ms/u/o/obedkovm/.local/lib64/python3.4/site-packages/sklearn/naive_bayes.py:472: UserWarning: alpha too small will result in numeric errors, setting alpha = 1.0e-10
+  'setting alpha = %.1e' % _ALPHA_MIN)
+/afs/ms/u/o/obedkovm/.local/lib64/python3.4/site-packages/sklearn/naive_bayes.py:472: UserWarning: alpha too small will result in numeric errors, setting alpha = 1.0e-10
+  'setting alpha = %.1e' % _ALPHA_MIN)
+/afs/ms/u/o/obedkovm/.local/lib64/python3.4/site-packages/sklearn/naive_bayes.py:472: UserWarning: alpha too small will result in numeric errors, setting alpha = 1.0e-10
+  'setting alpha = %.1e' % _ALPHA_MIN)
+Best params: {'fit_prior': True, 'alpha': 0.0}
+Accuracy train set: 0.9972640218878249
+Accuracy dev set: 0.9977210574293528
+Accuracy test set: 0.998769987699877
+--------------------
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=42,
+            splitter='best')
+Best params: {'min_samples_split': 10, 'max_depth': 7}
+Accuracy train set: 0.99921829196795
+Accuracy dev set: 1.0
+Accuracy test set: 1.0
+--------------------
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+Best params: {'n_neighbors': 2}
+Accuracy train set: 1.0
+Accuracy dev set: 1.0
+Accuracy test set: 1.0
+--------------------
+==============================
+
+
