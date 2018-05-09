@@ -7,6 +7,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 
 def retrieve_data(path):
@@ -17,6 +18,7 @@ def retrieve_data(path):
 
 def read_data(path):
     df = pd.read_csv(path, compression='gzip', header=None, sep=',')
+    print(df)
     data = df.iloc[:, :-1]
     labels = df.iloc[:, -1]
     print(data, labels)
@@ -27,6 +29,10 @@ def find_params(clf, params, data, labels, test_data, test_labels):
     train_data, dev_data, train_labels, dev_labels = train_test_split(data, labels,
                                                                       test_size=0.3, random_state=42)
     print(clf)
+    # clf.fit(train_data, train_labels)
+    # dev_preds = clf.predict(dev_data)
+    # test_preds = clf.predict(test_data)
+
     gs = GridSearchCV(clf, params)
     gs.fit(train_data, train_labels)
     print("Best params:",  gs.best_params_)
@@ -42,6 +48,14 @@ def classifiers(train_data, train_labels, test_data, test_labels):
     A_params = [0.0, 0.25, 0.5, 0.75, 1.0]
     mnb_params = [{"alpha": A_params, "fit_prior": [True, False]}, ]
 
+    rf = RandomForestClassifier(random_state=42)
+    rf_params = {"max_depth": [3, None],
+                  "max_features": [1, 3, 10],
+                  "min_samples_split": [2, 3, 10],
+                  "min_samples_leaf": [1, 3, 10],
+                  "bootstrap": [True, False],
+                  "criterion": ["gini", "entropy"]}
+
     svc = SVC(kernel="rbf", random_state=42)
     G_params = [1.0, 0.75, 0.5, 0.1, 0.05]
     svc_params = [{"C": range(25, 1000, 200), "gamma": G_params}, ]
@@ -53,8 +67,8 @@ def classifiers(train_data, train_labels, test_data, test_labels):
     N_params = [2, 3, 5, 7, 10, 20]
     knn_params = [{"n_neighbors": N_params}, ]
 
-    clfs = [svc, mnb, dt, knn]
-    params = [svc_params, mnb_params, dt_params, knn_params]
+    clfs = [svc, dt, knn, rf, mnb]
+    params = [svc_params, dt_params, knn_params, rf_params, mnb_params]
     for i in range(0, len(params)):
         find_params(clfs[i], params[i], train_data, train_labels, test_data, test_labels)
         print("-" * 20)
@@ -66,18 +80,9 @@ if __name__ == "__main__":
     path2train = "/train.txt.gz"
 
     # for path2dataset in retrieve_data(path):
-    #     if path2dataset == "./data/cinlp-twitter" or \
-    #             path2dataset == "./data/connect-4-raw" or \
-    #                 path2dataset == "./data/music-genre-classification" or \
-    #                     path2dataset == "./data/car-evaluation":
-    #         continue
-    path2dataset = "./data/connect-4-interpreted"
+    path2dataset = "./data/poker"
     print(path2dataset)
     test_data, test_labels = read_data(path2dataset + path2test)
     train_data, train_labels = read_data(path2dataset + path2train)
     classifiers(train_data, train_labels, test_data, test_labels)
     print("=" * 30)
-
-# cinilp-twitter: remove some columns, T/F->1/0
-# credit-card-fraud: negative numbers -> normalize
-# music-genre-classification: some features are categorical

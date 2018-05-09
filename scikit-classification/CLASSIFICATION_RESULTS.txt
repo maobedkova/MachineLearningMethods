@@ -30,48 +30,47 @@ car-evaluation            	scikitDecisionTree	0.9286	mobedkova	ORIGFEATS, 'max_d
 car-evaluation            	scikitKNN         	0.7085	mobedkova	ORIGFEATS, 'n_neighbors': 20
 car-evaluation            	scikitmSVM        	0.7181	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 1.0
 car-evaluation            	scikitMultiNB     	0.6409	mobedkova	ORIGFEATS, 'alpha': 0.0, 'fit_prior': True
-cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
-cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
-cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
-cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
-connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
-connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
-connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
-connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
-credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
-credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
-credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
-credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
-motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
-motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
-motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
-motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
-mushrooms            	scikitDecisionTree	1.0	mobedkova	ORIGFEATS, 'min_samples_split': 10, 'max_depth': 7
-mushrooms            	scikitKNN         	1.0	mobedkova	ORIGFEATS, 'n_neighbors': 2
-mushrooms            	scikitmSVM        	1.0	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.5
-mushrooms            	scikitMultiNB     	0.9988	mobedkova	ORIGFEATS, 'fit_prior': True, 'alpha': 0.0
-music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
-music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
-music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
-music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
-poker                     	MFbaseline	    	bojar 	ORIGFEATS
-poker                     	MFbaseline	    	bojar 	ORIGFEATS
-poker                     	MFbaseline	    	bojar 	ORIGFEATS
-poker                     	MFbaseline	    	bojar 	ORIGFEATS
-poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
-poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
-poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
-poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
+cinlp-twitter            	scikitDecisionTree	0.75  	mobedkova	filtered out plain text, 'max_depth': 5, 'min_samples_split': 80
+cinlp-twitter            	scikitKNN         	0.7340	mobedkova	filtered out plain text, 'n_neighbors': 3
+cinlp-twitter            	scikitmSVM        	0.7885	mobedkova	filtered out plain text, 'C': 825, 'gamma': 0.05
+cinlp-twitter            	scikitMultiNB     	0.7756	mobedkova	filtered out plain text, 'alpha': 0.25, 'fit_prior': Tru
+connect-4-interpreted    	scikitDecisionTree	0.6209	mobedkova	ORIGFEATS
+connect-4-interpreted    	scikitKNN         	0.6789	mobedkova	ORIGFEATS
+connect-4-interpreted    	scikitmSVM        	0.7332	mobedkova	ORIGFEATS
+connect-4-interpreted    	scikitMultiNB     	0.7089	mobedkova	ORIGFEATS
+credit-card-fraud        	scikitDecisionTree	0.5124	mobedkova	ORIGFEATS, 'max_depth': 7, 'min_samples_split': 20
+credit-card-fraud        	scikitKNN         	0.9600	mobedkova	ORIGFEATS, 'n_neighbors': 2
+credit-card-fraud        	scikitmSVM        	0.9351	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.05
+credit-card-fraud        	scikitRandomForest 	0.5175	mobedkova	ORIGFEATS, 'bootstrap': False, 'criterion': 'gini', 'max_depth': None, 'max_features': 10, 'min_samples_leaf': 3, 'min_samples_split': 10
+motion-capture-hand      	scikitDecisionTree	0.9526	mobedkova	ORIGFEATS
+motion-capture-hand      	scikitKNN         	0.9361	mobedkova	ORIGFEATS
+motion-capture-hand      	scikitmSVM        	0.4339	mobedkova	ORIGFEATS
+motion-capture-hand      	scikitRandomForest	0.9757	mobedkova	ORIGFEATS
+mushrooms                	scikitDecisionTree	1.0   	mobedkova	ORIGFEATS, 'min_samples_split': 10, 'max_depth': 7
+mushrooms                	scikitKNN         	1.0   	mobedkova	ORIGFEATS, 'n_neighbors': 2
+mushrooms                	scikitmSVM        	1.0   	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.5
+mushrooms                	scikitMultiNB     	0.9988	mobedkova	ORIGFEATS, 'fit_prior': True, 'alpha': 0.0
+music-genre-classification	scikitDecisionTree	0.4371	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
+music-genre-classification	scikitKNN         	0.3638	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
+music-genre-classification	scikitmSVM        	0.2800	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
+music-genre-classification	scikitRandomForest	0.5436	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
+poker                     	scikitDecisionTree	0.4858	mobedkova	ORIGFEATS
+poker                     	scikitKNN         	0.5459	mobedkova	ORIGFEATS
+poker                     	scikitmSVM        	0.5787	mobedkova	ORIGFEATS
+poker                     	scikitRandomForest	0.5537	mobedkova	ORIGFEATS
+poker-with-extra-features 	scikitDecisionTree	0.9993	mobedkova	ORIGFEATS
+poker-with-extra-features 	scikitKNN         	0.6710	mobedkova	ORIGFEATS
+poker-with-extra-features 	scikitmSVM        	0.9552	mobedkova	ORIGFEATS
+poker-with-extra-features 	scikitRandomForest	0.9987	mobedkova	ORIGFEATS
 spectf-heart            	scikitDecisionTree	0.6791	mobedkova	ORIGFEATS, 'max_depth': 3, 'min_samples_split': 10
 spectf-heart            	scikitKNN         	0.5454	mobedkova	ORIGFEATS, 'n_neighbors': 5
 spectf-heart            	scikitmSVM        	0.0802	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 1.0
 spectf-heart            	scikitMultiNB     	0.6203	mobedkova	ORIGFEATS, 'alpha': 0.0, 'fit_prior': True
-wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
-wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
-wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
-wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
-pamap-easy            	scikitDecisionTree	0.9783	mobedkova	ORIGFEATS, 'min_samples_split': 10, 'max_depth': 13
-pamap-easy            	scikitKNN         	0.9774	mobedkova	ORIGFEATS, 'n_neighbors': 3
-pamap-easy            	scikitmSVM        	0.9774	mobedkova	ORIGFEATS, 'gamma': 1.0, 'C': 225
-pamap-easy            	scikitMultiNB     	0.4418	mobedkova	ORIGFEATS, 'fit_prior': False, 'alpha': 0.5
-
+wine-quality            	scikitDecisionTree	0.5505	mobedkova	ORIGFEATS, 'min_samples_split': 2, 'max_depth': None
+wine-quality            	scikitKNN         	0.4653	mobedkova	ORIGFEATS, 'n_neighbors': 5
+wine-quality            	scikitmSVM        	0.5490	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.5
+wine-quality            	scikitRandomForest	0.6065	mobedkova	ORIGFEATS, bootstrap=True, criterion='gini', max_depth=None, max_features='auto', min_samples_leaf=1, min_samples_split=2
+pamap-easy              	scikitDecisionTree	0.9783	mobedkova	ORIGFEATS, 'min_samples_split': 10, 'max_depth': 13
+pamap-easy              	scikitKNN         	0.9774	mobedkova	ORIGFEATS, 'n_neighbors': 3
+pamap-easy              	scikitmSVM        	0.9774	mobedkova	ORIGFEATS, 'gamma': 1.0, 'C': 225
+pamap-easy              	scikitMultiNB     	0.4418	mobedkova	ORIGFEATS, 'fit_prior': False, 'alpha': 0.5
