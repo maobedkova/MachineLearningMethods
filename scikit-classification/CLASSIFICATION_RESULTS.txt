@@ -26,10 +26,10 @@ poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
 spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
 wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
 pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
-car-evaluation            	scikitDecisionTree	0.9286	mobedkova	ORIGFEATS
-car-evaluation            	scikitKNN         	0.7085	mobedkova	ORIGFEATS
-car-evaluation            	scikitmSVM        	0.7317	mobedkova	ORIGFEATS
-car-evaluation            	scikitMultiNB     	0.6409	mobedkova	ORIGFEATS
+car-evaluation            	scikitDecisionTree	0.9286	mobedkova	ORIGFEATS, 'max_depth': 7, 'min_samples_split': 10
+car-evaluation            	scikitKNN         	0.7085	mobedkova	ORIGFEATS, 'n_neighbors': 20
+car-evaluation            	scikitmSVM        	0.7181	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 1.0
+car-evaluation            	scikitMultiNB     	0.6409	mobedkova	ORIGFEATS, 'alpha': 0.0, 'fit_prior': True
 cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
 cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
 cinlp-twitter             	MFbaseline	    	bojar 	ORIGFEATS
@@ -38,10 +38,6 @@ connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
 connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
 connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
 connect-4-interpreted     	MFbaseline	    	bojar 	ORIGFEATS
-connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
-connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
-connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
-connect-4-raw             	MFbaseline	    	bojar 	ORIGFEATS
 credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
 credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
 credit-card-fraud         	MFbaseline	    	bojar 	ORIGFEATS
@@ -50,10 +46,10 @@ motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
 motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
 motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
 motion-capture-hand       	MFbaseline	    	bojar 	ORIGFEATS
-mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
-mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
-mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
-mushrooms                 	MFbaseline	    	bojar 	ORIGFEATS
+mushrooms            	scikitDecisionTree	1.0	mobedkova	ORIGFEATS, 'min_samples_split': 10, 'max_depth': 7
+mushrooms            	scikitKNN         	1.0	mobedkova	ORIGFEATS, 'n_neighbors': 2
+mushrooms            	scikitmSVM        	1.0	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.5
+mushrooms            	scikitMultiNB     	0.9988	mobedkova	ORIGFEATS, 'fit_prior': True, 'alpha': 0.0
 music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
 music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
 music-genre-classification	MFbaseline	    	bojar 	ORIGFEATS
@@ -66,16 +62,16 @@ poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
 poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
 poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
 poker-with-extra-features 	MFbaseline	    	bojar 	ORIGFEATS
-spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
-spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
-spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
-spectf-heart              	MFbaseline	    	bojar 	ORIGFEATS
+spectf-heart            	scikitDecisionTree	0.6791	mobedkova	ORIGFEATS, 'max_depth': 3, 'min_samples_split': 10
+spectf-heart            	scikitKNN         	0.5454	mobedkova	ORIGFEATS, 'n_neighbors': 5
+spectf-heart            	scikitmSVM        	0.0802	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 1.0
+spectf-heart            	scikitMultiNB     	0.6203	mobedkova	ORIGFEATS, 'alpha': 0.0, 'fit_prior': True
 wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
 wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
 wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
 wine-quality              	MFbaseline	    	bojar 	ORIGFEATS
-pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
-pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
-pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
-pamap-easy                	MFbaseline	    	bojar 	ORIGFEATS
+pamap-easy            	scikitDecisionTree	0.9783	mobedkova	ORIGFEATS, 'min_samples_split': 10, 'max_depth': 13
+pamap-easy            	scikitKNN         	0.9774	mobedkova	ORIGFEATS, 'n_neighbors': 3
+pamap-easy            	scikitmSVM        	0.9774	mobedkova	ORIGFEATS, 'gamma': 1.0, 'C': 225
+pamap-easy            	scikitMultiNB     	0.4418	mobedkova	ORIGFEATS, 'fit_prior': False, 'alpha': 0.5
 

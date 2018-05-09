@@ -19,6 +19,7 @@ def read_data(path):
     df = pd.read_csv(path, compression='gzip', header=None, sep=',')
     data = df.iloc[:, :-1]
     labels = df.iloc[:, -1]
+    print(data, labels)
     return data, labels
 
 
@@ -26,7 +27,7 @@ def find_params(clf, params, data, labels, test_data, test_labels):
     train_data, dev_data, train_labels, dev_labels = train_test_split(data, labels,
                                                                       test_size=0.3, random_state=42)
     print(clf)
-    gs = GridSearchCV(clf, params, cv=10)
+    gs = GridSearchCV(clf, params)
     gs.fit(train_data, train_labels)
     print("Best params:",  gs.best_params_)
     print("Accuracy train set:", gs.best_score_)
@@ -64,19 +65,19 @@ if __name__ == "__main__":
     path2test = "/test.txt.gz"
     path2train = "/train.txt.gz"
 
-    for path2dataset in retrieve_data(path):
-        if path2dataset == "./data/cinlp-twitter" or \
-                path2dataset == "./data/connect-4-raw" or \
-                    path2dataset == "./data/music-genre-classification" or \
-                        path2dataset == "./data/car-evaluation":
-            continue
-        print(path2dataset)
-        # path2dataset = "./data/wine-quality"
-        test_data, test_labels = read_data(path2dataset + path2test)
-        train_data, train_labels = read_data(path2dataset + path2train)
-        classifiers(train_data, train_labels, test_data, test_labels)
-        print("=" * 30)
+    # for path2dataset in retrieve_data(path):
+    #     if path2dataset == "./data/cinlp-twitter" or \
+    #             path2dataset == "./data/connect-4-raw" or \
+    #                 path2dataset == "./data/music-genre-classification" or \
+    #                     path2dataset == "./data/car-evaluation":
+    #         continue
+    path2dataset = "./data/connect-4-interpreted"
+    print(path2dataset)
+    test_data, test_labels = read_data(path2dataset + path2test)
+    train_data, train_labels = read_data(path2dataset + path2train)
+    classifiers(train_data, train_labels, test_data, test_labels)
+    print("=" * 30)
 
-# cinilp-twitter
-# connect-4-raw
-# music-genre-classification
+# cinilp-twitter: remove some columns, T/F->1/0
+# credit-card-fraud: negative numbers -> normalize
+# music-genre-classification: some features are categorical
