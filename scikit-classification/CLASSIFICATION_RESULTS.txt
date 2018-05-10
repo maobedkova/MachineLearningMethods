@@ -42,18 +42,18 @@ credit-card-fraud        	scikitDecisionTree	0.5124	mobedkova	ORIGFEATS, 'max_de
 credit-card-fraud        	scikitKNN         	0.9600	mobedkova	ORIGFEATS, 'n_neighbors': 2
 credit-card-fraud        	scikitmSVM        	0.9351	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.05
 credit-card-fraud        	scikitRandomForest 	0.5175	mobedkova	ORIGFEATS, 'bootstrap': False, 'criterion': 'gini', 'max_depth': None, 'max_features': 10, 'min_samples_leaf': 3, 'min_samples_split': 10
-motion-capture-hand      	scikitDecisionTree	0.9526	mobedkova	ORIGFEATS
-motion-capture-hand      	scikitKNN         	0.9361	mobedkova	ORIGFEATS
-motion-capture-hand      	scikitmSVM        	0.4339	mobedkova	ORIGFEATS
-motion-capture-hand      	scikitRandomForest	0.9757	mobedkova	ORIGFEATS
+motion-capture-hand      	scikitDecisionTree	0.9526	mobedkova	ORIGFEATS, standard parameters
+motion-capture-hand      	scikitKNN         	0.9361	mobedkova	ORIGFEATS, standard parameters
+motion-capture-hand      	scikitmSVM        	0.4339	mobedkova	ORIGFEATS, standard parameters
+motion-capture-hand      	scikitRandomForest	0.9757	mobedkova	ORIGFEATS, standard parameters
 mushrooms                	scikitDecisionTree	1.0   	mobedkova	ORIGFEATS, 'min_samples_split': 10, 'max_depth': 7
 mushrooms                	scikitKNN         	1.0   	mobedkova	ORIGFEATS, 'n_neighbors': 2
 mushrooms                	scikitmSVM        	1.0   	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.5
 mushrooms                	scikitMultiNB     	0.9988	mobedkova	ORIGFEATS, 'fit_prior': True, 'alpha': 0.0
-music-genre-classification	scikitDecisionTree	0.4371	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
-music-genre-classification	scikitKNN         	0.3638	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
-music-genre-classification	scikitmSVM        	0.2800	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
-music-genre-classification	scikitRandomForest	0.5436	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
+music-genre-classification	scikitDecisionTree	0.4371	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21], standard parameters
+music-genre-classification	scikitKNN         	0.3638	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21], standard parameters
+music-genre-classification	scikitmSVM        	0.2800	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21], standard parameters
+music-genre-classification	scikitRandomForest	0.5436	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21], standard parameters
 poker                     	scikitDecisionTree	0.5280	mobedkova	ORIGFEATS, 'max_depth': 7, 'min_samples_split': 90
 poker                     	scikitKNN         	0.5712	mobedkova	ORIGFEATS, 'n_neighbors': 20
 poker                     	scikitmSVM        	0.5787	mobedkova	ORIGFEATS, C=1.0, gamma='auto'
