@@ -499,3 +499,88 @@ Accuracy dev set: 0.9764397905759162
 Accuracy test set: 0.9756709690637164
 
 
+
+
+./data/poker
+
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)
+Best params: {'C': 25, 'gamma': 0.1}
+Accuracy train set: 0.5444108071057291
+Accuracy dev set: 0.5363188058110089
+Accuracy test set: 0.540133
+--------------------
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=42, splitter='best')
+Best params: {'max_depth': 7, 'min_samples_split': 90}
+Accuracy train set: 0.5347004055520649
+Accuracy dev set: 0.5289884046381448
+Accuracy test set: 0.528061
+--------------------
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+Best params: {'n_neighbors': 20}
+Accuracy train set: 0.5714856914377107
+Accuracy dev set: 0.5780354524856725
+Accuracy test set: 0.571226
+--------------------
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            n_estimators=10, n_jobs=1, oob_score=False, random_state=42,
+            verbose=0, warm_start=False)
+Best params: {'bootstrap': False, 'criterion': 'entropy', 'max_depth': None, 'max_features': 3, 'min_samples_leaf': 10, 'min_samples_split': 2}
+Accuracy train set: 0.5817101730736277
+Accuracy dev set: 0.5953618552578969
+Accuracy test set: 0.594861
+--------------------
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+Best params: {'alpha': 0.0, 'fit_prior': True}
+Accuracy train set: 0.49911463985834237
+Accuracy dev set: 0.50166600026656
+Accuracy test set: 0.501207
+--------------------
+==============================
+
+./data/connect-4-interpreted
+
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)
+Best params: {'C': 25, 'gamma': 0.05}
+Accuracy train set: 0.7315099078984092
+Accuracy dev set: 0.7346067578322842
+Accuracy test set: 0.7333054120712923
+--------------------
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=42, splitter='best')
+Best params: {'max_depth': 9, 'min_samples_split': 40}
+Accuracy train set: 0.7128725152727385
+Accuracy dev set: 0.7200636712249475
+Accuracy test set: 0.7181348596956583
+--------------------
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+Best params: {'n_neighbors': 20}
+Accuracy train set: 0.7216795360808758
+Accuracy dev set: 0.7238984154547428
+Accuracy test set: 0.7235329703569268
+--------------------
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            n_estimators=10, n_jobs=1, oob_score=False, random_state=42,
+            verbose=0, warm_start=False)

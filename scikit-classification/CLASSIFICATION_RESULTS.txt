@@ -34,10 +34,10 @@ cinlp-twitter            	scikitDecisionTree	0.75  	mobedkova	filtered out plain
 cinlp-twitter            	scikitKNN         	0.7340	mobedkova	filtered out plain text, 'n_neighbors': 3
 cinlp-twitter            	scikitmSVM        	0.7885	mobedkova	filtered out plain text, 'C': 825, 'gamma': 0.05
 cinlp-twitter            	scikitMultiNB     	0.7756	mobedkova	filtered out plain text, 'alpha': 0.25, 'fit_prior': Tru
-connect-4-interpreted    	scikitDecisionTree	0.6209	mobedkova	ORIGFEATS
-connect-4-interpreted    	scikitKNN         	0.6789	mobedkova	ORIGFEATS
-connect-4-interpreted    	scikitmSVM        	0.7332	mobedkova	ORIGFEATS
-connect-4-interpreted    	scikitMultiNB     	0.7089	mobedkova	ORIGFEATS
+connect-4-interpreted    	scikitDecisionTree	0.7181	mobedkova	ORIGFEATS, 'max_depth': 9, 'min_samples_split': 40
+connect-4-interpreted    	scikitKNN         	0.7235	mobedkova	ORIGFEATS, 'n_neighbors': 20
+connect-4-interpreted    	scikitmSVM        	0.7333	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.05
+connect-4-interpreted    	scikitMultiNB     	0.7089	mobedkova	ORIGFEATS, standard parameters
 credit-card-fraud        	scikitDecisionTree	0.5124	mobedkova	ORIGFEATS, 'max_depth': 7, 'min_samples_split': 20
 credit-card-fraud        	scikitKNN         	0.9600	mobedkova	ORIGFEATS, 'n_neighbors': 2
 credit-card-fraud        	scikitmSVM        	0.9351	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 0.05
@@ -54,10 +54,10 @@ music-genre-classification	scikitDecisionTree	0.4371	mobedkova	filtered out colu
 music-genre-classification	scikitKNN         	0.3638	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
 music-genre-classification	scikitmSVM        	0.2800	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
 music-genre-classification	scikitRandomForest	0.5436	mobedkova	filtered out columns indexed [1, 2, 5, 7, 8, 11, 13, 15, 18, 21]
-poker                     	scikitDecisionTree	0.4858	mobedkova	ORIGFEATS
-poker                     	scikitKNN         	0.5459	mobedkova	ORIGFEATS
-poker                     	scikitmSVM        	0.5787	mobedkova	ORIGFEATS
-poker                     	scikitRandomForest	0.5537	mobedkova	ORIGFEATS
+poker                     	scikitDecisionTree	0.5280	mobedkova	ORIGFEATS, 'max_depth': 7, 'min_samples_split': 90
+poker                     	scikitKNN         	0.5712	mobedkova	ORIGFEATS, 'n_neighbors': 20
+poker                     	scikitmSVM        	0.5787	mobedkova	ORIGFEATS, C=1.0, gamma='auto'
+poker                     	scikitRandomForest	0.5949	mobedkova	ORIGFEATS, 'bootstrap': False, 'criterion': 'entropy', 'max_depth': None, 'max_features': 3, 'min_samples_leaf': 10, 'min_samples_split': 2
 poker-with-extra-features 	scikitDecisionTree	0.9993	mobedkova	ORIGFEATS
 poker-with-extra-features 	scikitKNN         	0.6710	mobedkova	ORIGFEATS
 poker-with-extra-features 	scikitmSVM        	0.9552	mobedkova	ORIGFEATS
