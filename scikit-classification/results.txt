@@ -584,3 +584,54 @@ RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
             min_samples_split=2, min_weight_fraction_leaf=0.0,
             n_estimators=10, n_jobs=1, oob_score=False, random_state=42,
             verbose=0, warm_start=False)
+--------------------
+==============================			
+				
+			
+./data/poker-with-extra-features
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)
+fBest params: {'C': 25, 'gamma': 0.05}
+Accuracy train set: 0.9407094305135089
+Accuracy dev set: 0.9505531120884979
+Accuracy test set: 0.953592
+--------------------
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=42, splitter='best')
+Best params: {'max_depth': 15, 'min_samples_split': 10}
+Accuracy train set: 0.9989718398354944
+Accuracy dev set: 0.9990670398507264
+Accuracy test set: 0.999328
+--------------------
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+Best params: {'n_neighbors': 10}
+Accuracy train set: 0.666590506654481
+Accuracy dev set: 0.6817273090763695
+
+Accuracy test set: 0.678971
+--------------------
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            n_estimators=10, n_jobs=1, oob_score=False, random_state=42,
+            verbose=0, warm_start=False)
+Best params: {'bootstrap': False, 'criterion': 'entropy', 'max_depth': None, 'max_features': 10, 'min_samples_leaf': 1, 'min_samples_split': 3}
+Accuracy train set: 0.9993716798994687
+Accuracy dev set: 0.9992003198720512
+Accuracy test set: 0.999537
+--------------------
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+Best params: {'alpha': 0.75, 'fit_prior': True}
+Accuracy train set: 0.673387787742046
+Accuracy dev set: 0.6845261895241903
+Accuracy test set: 0.68613
+--------------------
+==============================

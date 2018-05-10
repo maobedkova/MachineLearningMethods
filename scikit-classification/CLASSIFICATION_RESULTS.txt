@@ -58,10 +58,10 @@ poker                     	scikitDecisionTree	0.5280	mobedkova	ORIGFEATS, 'max_d
 poker                     	scikitKNN         	0.5712	mobedkova	ORIGFEATS, 'n_neighbors': 20
 poker                     	scikitmSVM        	0.5787	mobedkova	ORIGFEATS, C=1.0, gamma='auto'
 poker                     	scikitRandomForest	0.5949	mobedkova	ORIGFEATS, 'bootstrap': False, 'criterion': 'entropy', 'max_depth': None, 'max_features': 3, 'min_samples_leaf': 10, 'min_samples_split': 2
-poker-with-extra-features 	scikitDecisionTree	0.9993	mobedkova	ORIGFEATS
-poker-with-extra-features 	scikitKNN         	0.6710	mobedkova	ORIGFEATS
-poker-with-extra-features 	scikitmSVM        	0.9552	mobedkova	ORIGFEATS
-poker-with-extra-features 	scikitRandomForest	0.9987	mobedkova	ORIGFEATS
+poker-with-extra-features 	scikitDecisionTree	0.9993	mobedkova	ORIGFEATS, 'max_depth': 15, 'min_samples_split': 10
+poker-with-extra-features 	scikitKNN         	0.6789	mobedkova	ORIGFEATS, 'n_neighbors': 10
+poker-with-extra-features 	scikitmSVM        	0.9552	mobedkova	ORIGFEATS, standard parameters
+poker-with-extra-features 	scikitRandomForest	0.9995	mobedkova	ORIGFEATS, 'bootstrap': False, 'criterion': 'entropy', 'max_depth': None, 'max_features': 10, 'min_samples_leaf': 1, 'min_samples_split': 3
 spectf-heart            	scikitDecisionTree	0.6791	mobedkova	ORIGFEATS, 'max_depth': 3, 'min_samples_split': 10
 spectf-heart            	scikitKNN         	0.5454	mobedkova	ORIGFEATS, 'n_neighbors': 5
 spectf-heart            	scikitmSVM        	0.0802	mobedkova	ORIGFEATS, 'C': 25, 'gamma': 1.0

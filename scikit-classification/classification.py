@@ -18,10 +18,9 @@ def retrieve_data(path):
 
 def read_data(path):
     df = pd.read_csv(path, compression='gzip', header=None, sep=',')
-    print(df)
     data = df.iloc[:, :-1]
     labels = df.iloc[:, -1]
-    print(data, labels)
+    # print(data, labels)
     return data, labels
 
 
@@ -79,10 +78,9 @@ if __name__ == "__main__":
     path2test = "/test.txt.gz"
     path2train = "/train.txt.gz"
 
-    # for path2dataset in retrieve_data(path):
-    path2dataset = "./data/poker"
-    print(path2dataset)
-    test_data, test_labels = read_data(path2dataset + path2test)
-    train_data, train_labels = read_data(path2dataset + path2train)
-    classifiers(train_data, train_labels, test_data, test_labels)
-    print("=" * 30)
+    for path2dataset in retrieve_data(path):
+        print(path2dataset)
+        test_data, test_labels = read_data(path2dataset + path2test)
+        train_data, train_labels = read_data(path2dataset + path2train)
+        classifiers(train_data, train_labels, test_data, test_labels)
+        print("=" * 30)
